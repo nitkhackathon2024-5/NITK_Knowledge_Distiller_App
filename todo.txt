@@ -1,0 +1,8 @@
+Speech to text
+audio file formats converter
+instruction to download ffmpeg
+
+use OpenAI
+Readme
+firebase config file and bucket name
+Remove unncessary packages

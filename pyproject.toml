@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "nitk-knowledge-distiller-app"
+version = "0.1.0"
+description = "A Knowledge Distiller App"
+authors = ["UditJain2622004 <uditjain2622004@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pypdf2 = "^3.0.1"
+transformers = "^4.45.2"
+python-dotenv = "^1.0.1"
+langchain = "^0.3.3"
+langchain-groq = "^0.2.0"
+langchain-experimental = "^0.3.2"
+langchain-core = "^0.3.12"
+flask = "^3.0.3"
+firebase = "^4.0.1"
+firebase-admin = "^6.5.0"
+werkzeug = "^3.0.4"
+pdfminer = "^20191125"
+pdfminer-six = "^20240706"
+langchain-openai = "^0.2.3"
+flask-cors = "^5.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

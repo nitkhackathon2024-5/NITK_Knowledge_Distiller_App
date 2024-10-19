@@ -1,0 +1,54 @@
+Graph Document:
+==================================================
+Nodes:
+ID: Thread, Type: Concept, Properties: {}
+ID: Process, Type: Concept, Properties: {}
+ID: Multithreaded Server Architecture, Type: Concept, Properties: {}
+ID: Multicore Programming, Type: Concept, Properties: {}
+ID: Concurrency, Type: Concept, Properties: {}
+ID: Parallelism, Type: Concept, Properties: {}
+ID: User Threads, Type: Concept, Properties: {}
+ID: Kernel Threads, Type: Concept, Properties: {}
+ID: Many-To-One Model, Type: Concept, Properties: {}
+ID: One-To-One Model, Type: Concept, Properties: {}
+ID: Many-To-Many Model, Type: Concept, Properties: {}
+ID: Two-Level Model, Type: Concept, Properties: {}
+
+Relationships:
+Source: Thread (Type: Concept), Target: Process (Type: Concept), Type: BELONGS_TO, Properties: {}
+Source: Multithreaded Server Architecture (Type: Concept), Target: Thread (Type: Concept), Type: IMPLEMENTED_BY, Properties: {}
+Source: Multicore Programming (Type: Concept), Target: Concurrency (Type: Concept), Type: SUPPORTS, Properties: {}
+Source: Multicore Programming (Type: Concept), Target: Parallelism (Type: Concept), Type: SUPPORTS, Properties: {}
+Source: User Threads (Type: Concept), Target: Thread (Type: Concept), Type: INSTANCE_OF, Properties: {}
+Source: Kernel Threads (Type: Concept), Target: Thread (Type: Concept), Type: INSTANCE_OF, Properties: {}
+Source: Many-To-One Model (Type: Concept), Target: Thread (Type: Concept), Type: MAPS_TO, Properties: {}
+Source: One-To-One Model (Type: Concept), Target: Thread (Type: Concept), Type: MAPS_TO, Properties: {}
+Source: Many-To-Many Model (Type: Concept), Target: Thread (Type: Concept), Type: MAPS_TO, Properties: {}
+
+==================================================
+
+Graph Document:
+==================================================
+Nodes:
+ID: Many-To-Many Model, Type: Model, Properties: {}
+ID: Two-Level Model, Type: Model, Properties: {}
+ID: Thread Cancellation, Type: Concept, Properties: {}
+ID: Asynchronous Cancellation, Type: Approach, Properties: {}
+ID: Deferred Cancellation, Type: Approach, Properties: {}
+ID: Multiple-Processor Scheduling, Type: Concept, Properties: {}
+ID: Processor Affinity, Type: Concept, Properties: {}
+ID: Numa, Type: System, Properties: {}
+ID: Cpu Scheduling, Type: Concept, Properties: {}
+ID: Multicore Processors, Type: Technology, Properties: {}
+ID: Multithreaded Multicore System, Type: System, Properties: {}
+
+Relationships:
+Source: Many-To-Many Model (Type: Model), Target: Multiple-Processor Scheduling (Type: Concept), Type: RELATED_TO, Properties: {}
+Source: Two-Level Model (Type: Model), Target: Multiple-Processor Scheduling (Type: Concept), Type: RELATED_TO, Properties: {}
+Source: Thread Cancellation (Type: Concept), Target: Asynchronous Cancellation (Type: Approach), Type: USES, Properties: {}
+Source: Thread Cancellation (Type: Concept), Target: Deferred Cancellation (Type: Approach), Type: USES, Properties: {}
+Source: Multiple-Processor Scheduling (Type: Concept), Target: Processor Affinity (Type: Concept), Type: RELATED_TO, Properties: {}
+Source: Numa (Type: System), Target: Cpu Scheduling (Type: Concept), Type: AFFECTS, Properties: {}
+Source: Multicore Processors (Type: Technology), Target: Multithreaded Multicore System (Type: System), Type: ENABLES, Properties: {}
+
+==================================================

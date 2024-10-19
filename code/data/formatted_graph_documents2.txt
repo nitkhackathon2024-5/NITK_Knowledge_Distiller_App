@@ -1,0 +1,45 @@
+Graph Document:
+==================================================
+Nodes:
+ID: Threads, Type: Concept, Properties: {}
+ID: Process, Type: Concept, Properties: {}
+ID: Web Browser, Type: Application, Properties: {}
+ID: Word Processor, Type: Application, Properties: {}
+ID: Powerpoint, Type: Application, Properties: {}
+ID: Kernels, Type: Concept, Properties: {}
+ID: Multicore Programming, Type: Concept, Properties: {}
+ID: Multicore Systems, Type: Concept, Properties: {}
+ID: Concurrency, Type: Concept, Properties: {}
+ID: Parallelism, Type: Concept, Properties: {}
+ID: Posix Pthreads, Type: Library, Properties: {}
+ID: Windows Threads, Type: Library, Properties: {}
+ID: Java Threads, Type: Library, Properties: {}
+ID: Solaris, Type: Operating system, Properties: {}
+ID: Linux, Type: Operating system, Properties: {}
+ID: Mac Os X, Type: Operating system, Properties: {}
+ID: Ios, Type: Operating system, Properties: {}
+ID: Android, Type: Operating system, Properties: {}
+ID: Numa, Type: Architecture, Properties: {}
+ID: Cpu Scheduling, Type: Concept, Properties: {}
+ID: Multithreaded Multicore System, Type: Concept, Properties: {}
+
+Relationships:
+Source: Threads (Type: Concept), Target: Process (Type: Concept), Type: BELONGS_TO, Properties: {}
+Source: Threads (Type: Concept), Target: Web Browser (Type: Application), Type: IMPLEMENTS, Properties: {}
+Source: Threads (Type: Concept), Target: Word Processor (Type: Application), Type: IMPLEMENTS, Properties: {}
+Source: Threads (Type: Concept), Target: Powerpoint (Type: Application), Type: IMPLEMENTS, Properties: {}
+Source: Kernels (Type: Concept), Target: Threads (Type: Concept), Type: MANAGES, Properties: {}
+Source: Multicore Programming (Type: Concept), Target: Multicore Systems (Type: Concept), Type: UTILIZES, Properties: {}
+Source: Concurrency (Type: Concept), Target: Parallelism (Type: Concept), Type: ENABLES, Properties: {}
+Source: Posix Pthreads (Type: Library), Target: Threads (Type: Concept), Type: IMPLEMENTS, Properties: {}
+Source: Windows Threads (Type: Library), Target: Threads (Type: Concept), Type: IMPLEMENTS, Properties: {}
+Source: Java Threads (Type: Library), Target: Threads (Type: Concept), Type: IMPLEMENTS, Properties: {}
+Source: Solaris (Type: Operating system), Target: Threads (Type: Concept), Type: SUPPORTS, Properties: {}
+Source: Linux (Type: Operating system), Target: Threads (Type: Concept), Type: SUPPORTS, Properties: {}
+Source: Mac Os X (Type: Operating system), Target: Threads (Type: Concept), Type: SUPPORTS, Properties: {}
+Source: Ios (Type: Operating system), Target: Threads (Type: Concept), Type: SUPPORTS, Properties: {}
+Source: Android (Type: Operating system), Target: Threads (Type: Concept), Type: SUPPORTS, Properties: {}
+Source: Numa (Type: Architecture), Target: Cpu Scheduling (Type: Concept), Type: UTILIZES, Properties: {}
+Source: Multithreaded Multicore System (Type: Concept), Target: Threads (Type: Concept), Type: UTILIZES, Properties: {}
+
+==================================================
