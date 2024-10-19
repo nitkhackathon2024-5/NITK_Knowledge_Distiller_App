@@ -31,8 +31,9 @@ chunks = [text]
 # print(len(chunks))
 
 
-llm = ChatGroq(model="llama-3.1-70b-versatile")
+# llm = ChatGroq(model="llama-3.1-70b-versatile")
 # llm = ChatOpenAI(model="gpt-4o-mini-2024-07-18")
+llm = ChatOpenAI(model="gpt-4o-mini-2024-07-18")
 
 
 llm_transformer = LLMGraphTransformer(llm=llm)

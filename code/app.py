@@ -157,6 +157,7 @@ def signup():
             user.uid,
             display_name=name
         )
+        session['user_id'] = user.uid
         return jsonify({
             'message': 'User created successfully',
             'user_id': user.uid

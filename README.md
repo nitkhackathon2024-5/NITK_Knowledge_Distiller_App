@@ -16,6 +16,11 @@ In the fast-paced world of academia, students often struggle with organizing and
 
 Develop an application that allows users to load their study notes—whether text, images, or audio—and automatically generates a personal knowledge graph/highlight. This graph will help students quickly find and connect key concepts, making study sessions more efficient and tailored to their learning style. The app must support various input types, including text documents, handwritten notes, images, and audio recordings, and effectively parse these formats to extract meaningful information.
 
+### Solution Demo Video Link
+
+[Demo Video](https://youtu.be/1pyXAscuhZQ)
+[![Alt text](https://img.youtube.com/vi/1pyXAscuhZQ/0.jpg)](https://www.youtube.com/watch?v=1pyXAscuhZQ)
+
 ## Tech Stack
 
 ### Frontend
