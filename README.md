@@ -1,4 +1,4 @@
-# NITK - Knowledge Distiller App
+# NITK - Big3
 
 ## Team Members
 
